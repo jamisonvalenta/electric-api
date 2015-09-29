@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'RawPostController@getIndex');
+Route::post('/post', 'RawPostController@postRaw');
